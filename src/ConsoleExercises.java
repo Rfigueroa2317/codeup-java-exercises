@@ -10,7 +10,7 @@ public class ConsoleExercises {
         // Explore the Scanner Class. \\
 
         // .1
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Please enter an integer: ");
 //        int myNum = scanner.nextInt();
         // You will get an exception. This applies to both a random text
@@ -32,9 +32,26 @@ public class ConsoleExercises {
 //        System.out.println(sentence);
 
         // .4
-        System.out.println("Please write a sentence");
-        String sentence = scanner.nextLine();
-        System.out.println(sentence);
+//        System.out.println("Please write a sentence");
+//        String sentence = scanner.nextLine();
+//        System.out.println(sentence);
+
+
+        // Calculate the perimeter and area of a room
+
+        // .1
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the values of length and width of a room: ");
+//        String value = scanner.nextLine();
+
+        int length = scanner.nextInt();
+        int width = scanner.nextInt();
+
+        // .2
+        int area = length * width;
+        System.out.printf("The Total area is %s", area);
+
+        // Bonuses
 
 
     }
