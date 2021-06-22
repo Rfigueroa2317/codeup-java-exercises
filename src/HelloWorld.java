@@ -76,8 +76,23 @@ public class HelloWorld {
         // is a straight up error.
 
         // .13
-        int x = 4;
-        x = x + 5;
-        System.out.println();
+//        int x = 4;
+//        x = x + 5;      x+=5;
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;      y *= x;
+
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;      x /= y;
+//        y = y - x;      y -= x;
+
+        // .14
+        byte num = 127;
+        System.out.println(num + 45);
+        // It will not let you assign a numerical value larger
+        //  than what it can hold. It will suggest you change it
+        //  to the type that can hold that numerical value.
     }
 }
