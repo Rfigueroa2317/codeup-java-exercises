@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class ConsoleIO {
@@ -42,7 +44,7 @@ public class ConsoleIO {
 //            System.out.printf("Your birth month is: %s\n", monthName);
 
         // *** NEXT INT ***
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter a number: ");
 //        String myString = scanner.next();
 //        int myNum = scanner.nextInt();
@@ -60,8 +62,30 @@ public class ConsoleIO {
 ////            System.out.println(word);
 //        }
 
-        for (int i = 0; i < args.length; i++){
-            System.out.println(args[i]);
-        }
+//        for (int i = 0; i < args.length; i++){
+//            System.out.println(args[i]);
+//        }
+
+
+
+        // More Stuff on the Scanner class
+
+        Scanner sc = new Scanner(System.in);
+
+        sc.useDelimiter("\n");
+        System.out.println("Please enter a number and a word: ");
+        int num = sc.nextInt();
+//        int sentence = Integer.parseInt(sc.nextLine());
+        String sentence = sc.nextLine();
+//        System.out.printf("Your number was: %d\n", num);
+//
+//        System.out.println("Please type a sentence:\n");
+//        sc.nextLine();
+//        String sentence = sc.nextLine();
+
+        System.out.println(num);
+        System.out.println(sentence);
+
+
     }
 }
