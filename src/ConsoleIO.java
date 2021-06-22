@@ -36,10 +36,32 @@ public class ConsoleIO {
         /* TODO: use the scanner to take in the name of the month you were born and print it back out
             - remember to first prompt the user for the input
  */
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println("What month were you born in?");
+//            String monthName = scanner.next();
+//            System.out.printf("Your birth month is: %s\n", monthName);
 
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("What month were you born in?");
-            String monthName = scanner.next();
-            System.out.printf("Your birth month is: %s\n", monthName);
+        // *** NEXT INT ***
+        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter a number: ");
+//        String myString = scanner.next();
+//        int myNum = scanner.nextInt();
+//        System.out.println(myNum);
+
+//        String myString = scanner.nextLine();
+//        System.out.println(myString);
+
+////        while (scanner.hasNext()){
+////            String word = scanner.next();
+////
+////            if (word.equals("break")){
+////                break;
+////            }
+////            System.out.println(word);
+//        }
+
+        for (int i = 0; i < args.length; i++){
+            System.out.println(args[i]);
+        }
     }
 }
