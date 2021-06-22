@@ -1,5 +1,41 @@
+import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
-        double pi = 3.14159;
+
+        // .1
+//        double pi = 3.14159;
+//        System.out.printf("The value is %.3f:\n ",pi);
+
+
+        // Explore the Scanner Class. \\
+
+        // .1
+        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please enter an integer: ");
+//        int myNum = scanner.nextInt();
+        // You will get an exception. This applies to both a random text
+        //  and a number that's outside of what an integer allows you to
+
+
+        // .2
+//        System.out.println("Please enter 3 words");
+//        String wordOne = scanner.next();
+//        String wordTwo = scanner.next();
+//        String wordThree = scanner.next();
+//
+//        System.out.println(wordOne + " " + wordTwo + " " + wordThree);
+
+
+        // .3
+//        System.out.println("Please write a sentence");
+//        String sentence = scanner.next();
+//        System.out.println(sentence);
+
+        // .4
+        System.out.println("Please write a sentence");
+        String sentence = scanner.nextLine();
+        System.out.println(sentence);
+
+
     }
 }
