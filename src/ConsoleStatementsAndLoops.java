@@ -96,21 +96,14 @@ public class ConsoleStatementsAndLoops {
 //        String user2 = scanner.next();
 //        String user3 = scanner.next();
 
-        String fourthUser = "userInput";
         System.out.println("Please enter a username: ");
-        scanner.nextLine();
+        String fourthUser = scanner.next();
 
-        if(fourthUser != user1){
-            System.out.println("Sorry, this username already exists.");
+        if(fourthUser.equalsIgnoreCase(user1) || fourthUser.equalsIgnoreCase(user2) || fourthUser.equalsIgnoreCase(user3)){
+            System.out.printf("Sorry, this username already exists.", fourthUser);
         }else{
-            System.out.println("You're in!");
+            System.out.printf("You're in!",fourthUser);
         }
-
-
-//        if(fourthUser != user1| user2 | user3){
-//            System.out.println("Sorry, this user already exists");
-//        }
-
 
     }
 }
