@@ -25,6 +25,12 @@ public class ConsoleExercises {
 //
 //        System.out.println(wordOne + " " + wordTwo + " " + wordThree);
 
+        // You can also do it like this:
+
+//        System.out.println(String wordOne);
+//        System.out.println(String wordTwo);
+//        System.out.println(String wordThree);
+
 
         // .3
 //        System.out.println("Please write a sentence");
@@ -37,22 +43,30 @@ public class ConsoleExercises {
 //        System.out.println(sentence);
 
 
+
         // Calculate the perimeter and area of a room
 
         // .1
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the values of length and width of a room: ");
+//        System.out.println("Enter the values of length and width of a room: ");
 //        String value = scanner.nextLine();
 
-        int length = scanner.nextInt();
-        int width = scanner.nextInt();
+//        int length = scanner.nextInt();
+//        int width = scanner.nextInt();
+        // You can also do it like this:
+        // Integer.parseInt(sc.nextLine()); it does the same thing
 
         // .2
-        int area = length * width;
-        System.out.printf("The Total area is %s", area);
+//        int area = length * width;
+//        System.out.printf("The Total area is %s\n", area);
+//
+//        System.out.printf("The Perimeter of the room is: %s", (2 * length) + (2 * width));
+
+
 
         // Bonuses
-
+//        float length = Float.parseFloat(scanner.nextLine());
+//        float width = Float.parseFloat(scanner.nextLine());
 
     }
 }
