@@ -10,10 +10,19 @@ public class ControlFlowExercises {
 //        }
 
         // b. Do While
-        int i = 0;
-        do {
+//        int i = 0;
+//        do {
+//            System.out.println("The number is now: " + i * 2);
+//            i++;
+//        }while(i <= 50);
+
+        // c. For Loop
+//        for(int i = 5; i <= 15; i++){
+//            System.out.println("i is: " + i);
+//        }
+
+        for(int i = 0; i <= 100; i++){
             System.out.println("The number is now: " + i * 2);
-            i++;
-        }while(i <= 100);
+        }
     }
 }
