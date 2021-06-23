@@ -88,22 +88,126 @@ public class ConsoleStatementsAndLoops {
 
         Scanner scanner = new Scanner(System.in);
 
-        String user1 = "Ricardo";
-        String user2 = "Ana";
-        String user3 = "Joel";
+//        String user1 = "Ricardo";
+//        String user2 = "Ana";
+//        String user3 = "Joel";
 
 //        String user1 = scanner.next();
 //        String user2 = scanner.next();
 //        String user3 = scanner.next();
 
-        System.out.println("Please enter a username: ");
-        String fourthUser = scanner.next();
+//        System.out.println("Please enter a username: ");
+//        String fourthUser = scanner.next();
 
-        if(fourthUser.equalsIgnoreCase(user1) || fourthUser.equalsIgnoreCase(user2) || fourthUser.equalsIgnoreCase(user3)){
-            System.out.printf("Sorry, this username already exists.", fourthUser);
-        }else{
-            System.out.printf("You're in!",fourthUser);
+//        if(fourthUser.equalsIgnoreCase(user1) || fourthUser.equalsIgnoreCase(user2) || fourthUser.equalsIgnoreCase(user3)){
+//            System.out.printf("Sorry, this username already exists.", fourthUser);
+//        }else{
+//            System.out.printf("You're in!",fourthUser);
+//        }
+
+        // another way to do it:
+
+//        if(fourthUser.equals(user1) || fourthUser.equals(user2) || fourthUser.equals(user3)){
+//            System.out.println("Sorry, this username already exists.");
+//        }else{
+//            System.out.println("You're in!");
+//        }
+
+
+        // Switch Statements
+//        char grade = 'C';
+//
+//        switch ( grade ){
+//            case 'A' :
+//                System.out.println("Great Job!!");
+//                break;
+//            case 'B':
+//                System.out.println("great job!");
+//                break;
+//            case 'C':
+//                System.out.println("not bad");
+//                break;
+//            case 'D':
+//                System.out.println("Try again");
+//            default:
+//                System.out.println("grades are just letters");
+
+                // Not having a break in between the case will run all of them
+                //ex: if you type A on 'char grade = '';' will cause to run
+                // all of them. By adding the break it will stop at whatever
+                // letter is assigned to char grade = '';
+
+
+
+                //TODO: refactor your code from the previous mini exercise
+                // into a switch statement.
+
+//                String user1 = "Ricardo";
+//                String user2 = "Ana";
+//                String user3 = "Joel";
+//
+//                System.out.println("Please enter a username: ");
+//                String fourthUser = scanner.next();
+
+
+//                switch (fourthUser){
+//                    case "Ricardo":
+//                        System.out.println("Sorry, this username already exists.");
+//                        break;
+//                    case "Ana":
+//                        System.out.println("Sorry, this username already exists.");
+//                        break;
+//                    case "Joel":
+//                        System.out.println("Sorry, this username already exists.");
+//                        break;
+//                    default:
+//                        System.out.println("You're in!");
+//                        break;
+//
+//                        // default works as a 'place holder' for any other input
+//                        //  you wanna type in other than the ones already established
+//                }
+
+
+
+                // while vs do...while loop:
+        //          condition is checked before
+        //          do ... while will always be executed first before
+        //          condition is met
+
+//                    int myNum = 0;
+
+//                    while(myNum <= 10){
+//                        System.out.println(myNum);
+//                        myNum++;
+//                    }
+
+                    // do ... while
+//                    do {
+//                        System.out.println(myNum);
+//                        myNum++;
+//                    } while(myNum <= 10);
+
+
+//                    for loop
+
+                    for(int myNum = 0; myNum <=20; myNum++){
+                        System.out.println(myNum);
+                    }
+
+        //TODO: using previous mini exercise, allow the user to input
+        // a new username several times until a unique username is entered.
+
+//                String user1 = "Ricardo";
+//                String user2 = "Ana";
+//                String user3 = "Joel";
+
+                for(){
+
+                }
+
         }
 
+
     }
-}
+//}
