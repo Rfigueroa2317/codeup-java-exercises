@@ -202,9 +202,9 @@ public class ConsoleStatementsAndLoops {
 //                String user2 = "Ana";
 //                String user3 = "Joel";
 
-                for(){
-
-                }
+//                for(){
+//
+//                }
 
         }
 
