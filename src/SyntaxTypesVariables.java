@@ -31,7 +31,7 @@ public class SyntaxTypesVariables {
         }else{
             System.out.println("I don't like it...");
         }
-    }
 
+    }
 
 }
