@@ -6,6 +6,8 @@ public class FundamentalsPractice {
 
 //        1. Write a program in Java to read 10 numbers from keyboard and find their sum
 //        and average
+
+
 //
 //    ```
 //        Expected Output :
@@ -28,6 +30,8 @@ public class FundamentalsPractice {
 //        1. Write a program in Java to display the n terms of odd natural number and
 //        their sum. Read the odd number using the `Scanner` class
 //
+
+
 //    ```
 //        Test Data
 //        Input number of terms : 10
