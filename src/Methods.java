@@ -157,22 +157,40 @@ public class Methods {
     //  a loop. A loop saves every loop in a new spot in memory recursion
     //  doesn't.
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("How many seats are there in the movie theatre?");
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("How many seats are there in the movie theatre?");
+//
+//        int seatsLeft = sc.nextInt();
+//        movieTheatre(seatsLeft);
+//    }
+//
+//    public static void movieTheatre(int numSeats){
+//        if(numSeats >= 0) {
+//            System.out.println("there are " + numSeats + "available.");
+//
+//            numSeats--;
+//            System.out.println("numSeats: " + numSeats);
+//            movieTheatre(numSeats);
+//        }
+//    }
 
-        int seatsLeft = sc.nextInt();
-        movieTheatre(seatsLeft);
+//    TODO: you are a sports manager. Prompt your client who is training
+//     for a marathon how many miles they have to run today. You're the
+//     coach, so you decide how many miles they ran that day. create a
+//     method that takes in how many miles that have left in training
+//     and simulate that they check in with you after every 2 miles. print out
+//     how many miles they have left in training until they have 0 miles
+//     left.
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
     }
 
-    public static void movieTheatre(int numSeats){
-        if(numSeats >= 0) {
-            System.out.println("there are " + numSeats + "available.");
+    public static void MilesThatNeedToRun(int miles){
+        int milesRan = 10;
 
-            numSeats--;
-            System.out.println("numSeats: " + numSeats);
-            movieTheatre(numSeats);
-        }
     }
 
 
