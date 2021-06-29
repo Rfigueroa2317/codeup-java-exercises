@@ -186,11 +186,19 @@ public class Methods {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("How many miles are you running today? ");
+        int milesRan = scanner.nextInt();
+        MilesLeft(milesRan);
     }
 
-    public static void MilesThatNeedToRun(int miles){
-        int milesRan = 10;
+    public static void MilesLeft(int miles){
+        if(miles >= 0){
+            System.out.println("You have " + miles + "Left.");
 
+            miles--;
+            System.out.println("miles: " + miles);
+            MilesLeft(miles);
+        }
     }
 
 
