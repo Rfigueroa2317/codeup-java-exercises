@@ -63,11 +63,12 @@ public class ControlFlowExercises {
         // .4 Convert given number grades into letter grades.
 
         Scanner sc = new Scanner(System.in);
-        int a = 88 - 100;
+
         System.out.println("Please enter a grade from 0 - 100: ");
         int input = sc.nextInt();
-        if(input == a){
+        if(input == 100){
             System.out.println("That's an A!");
+//           *** work on this one ***
         }
     }
 }
