@@ -65,26 +65,26 @@ public class Methods {
 
 //    Method overloading
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        greeting("wassup");
 //        System.out.println(greeting("hello","hey",));
-    }
+//    }
 
 //    public static void greeting(String newGreeting){
 //        System.out.println(newGreeting);
 //    }
 
-    public static void greeting(){
-        System.out.println("hello world");
-    }
-
-    public static void greeting(String oneGreeting){
-        System.out.println(oneGreeting);
-    }
-
-    public static void greeting(int randomNum){
-        System.out.println(randomNum);
-    }
+//    public static void greeting(){
+//        System.out.println("hello world");
+//    }
+//
+//    public static void greeting(String oneGreeting){
+//        System.out.println(oneGreeting);
+//    }
+//
+//    public static void greeting(int randomNum){
+//        System.out.println(randomNum);
+//    }
 
 //    you cannot have two separate methods with 'int' in it.
 //    you cannot repeat the same expectations
@@ -92,9 +92,9 @@ public class Methods {
 //        System.out.println(randomNum);
 //    }
 
-    public static void greeting(char letter){
-        System.out.println(letter);
-    }
+//    public static void greeting(char letter){
+//        System.out.println(letter);
+//    }
 
 
 //    public static void greeting(char first, char second, char third){
@@ -107,10 +107,74 @@ public class Methods {
 //        first and last)";
 
 
-    public static void FirstAndLast(){
+//    public static void FirstAndLast(){
+//
+//    }
 
+
+//    Pass by Methods
+
+//    public static void main(String[] args) {
+//        String tryChangingMe = "hello hello!";
+//        changeString(tryChangingMe);
+//        // hello hello --> something new
+////        System.out.println(tryChangingMe); // we're referencing
+////        the original value/reference // --> something new
+//    }
+//
+//    public static void changeString(String randomString){
+//        System.out.println(randomString); // hello hello
+//        randomString = "something new"; // hello hello --> something new
+////        System.out.println(randomString); // we're referencing the value
+//        // that was passed in (copy) which we changed
+//    }
+
+
+//    public static void main(String[] args) {
+//        int num = 5;
+//        anotherMethod(num);
+//        System.out.println("num after calling method: " + num); // 5
+//    }
+//
+//    public static void anotherMethod(int randomNum){
+//        System.out.println("randomNum at start of " + "anotherMethod: "
+//                + randomNum);
+//
+//        randomNum = randomNum + 5;
+//        System.out.println("randomNum after addition in "
+//                + "anotherMethod: " + randomNum);
+//
+//    }
+
+    //      *** Recursion ***       \\
+
+
+    // Recursion: a method that calls itself internally, require some
+    //  kind of "stopping point", also will need a new/different
+    //  argument to get passed in every time.
+
+    // why you'd use it: continue running program without the need of
+    //  a loop. A loop saves every loop in a new spot in memory recursion
+    //  doesn't.
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many seats are there in the movie theatre?");
+
+        int seatsLeft = sc.nextInt();
+        movieTheatre(seatsLeft);
     }
 
-}
+    public static void movieTheatre(int numSeats){
+        if(numSeats >= 0) {
+            System.out.println("there are " + numSeats + "available.");
 
+            numSeats--;
+            System.out.println("numSeats: " + numSeats);
+            movieTheatre(numSeats);
+        }
+    }
+
+
+}
 
