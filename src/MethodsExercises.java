@@ -92,44 +92,60 @@ public class MethodsExercises {
 
     // *** Easier way of doing it *** \\
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        add(0,0);
-//        subtract(4, 4);
-//        multiply(8, 8);
-//        divide(3,3);
-//        modulus(7, 5);
-    }
-    public static void add(int a, int b){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("do the addition: ");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        add(0,0);
+//        subtract(0, 0);
+//        multiply(0, 0);
+//        divide(1,1);
+//        modulus(1, 1);
+//    }
+//    public static void add(int a, int b){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("do the addition: ");
+//        int num1 = scanner.nextInt();
+//        int num2 = scanner.nextInt();
 //        System.out.println(a + b);
-        System.out.println(num1 + num2);
-    }
-
-    public static void subtract(int a, int b){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println(a - b);
-    }
-    public static void multiply(int a, int b){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println(a * b);
-    }
-    public static void divide(int a, int b){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println(a / b);
-    }
-    public static void modulus(int a, int b){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println(a % b);
-    }
+//        System.out.println(num1 + num2);
+//    }
+//
+//    public static void subtract(int a, int b){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("do the subtraction: ");
+//        int num1 = scanner.nextInt();
+//        int num2 = scanner.nextInt();
+//        System.out.println(a - b);
+//        System.out.println(num1 - num2);
+//
+//    }
+//    public static void multiply(int a, int b){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("do the multiplication: ");
+//        int num1 = scanner.nextInt();
+//        int num2 = scanner.nextInt();
+//        System.out.println(a * b);
+//        System.out.println(num1 * num2);
+//
+//    }
+//    public static void divide(int a, int b){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("do the division: ");
+//        int num1 = scanner.nextInt();
+//        int num2 = scanner.nextInt();
+//        System.out.println(a / b);
+//        System.out.println(num1 / num2);
+//
+//    }
+//    public static void modulus(int a, int b){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("do the modulus: ");
+//        int num1 = scanner.nextInt();
+//        int num2 = scanner.nextInt();
+//        System.out.println(a % b);
+//        System.out.println(num1 % num2);
+//
+//    }
 
 
 
@@ -137,13 +153,27 @@ public class MethodsExercises {
 
 //    public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
-//
+//        System.out.println("Enter a number between 1 and 10: ");
+//        int range = scanner.nextInt();
+//        getInteger(1, 10);
 //    }
 //
-//        public static int getInteger(int min, int max){
-//        int userInput = getInteger(1, 10);
-//        return getInteger();
+//
+//    public static int getInteger(int min, int max) {
+//        Scanner scanner = new Scanner(System.in);
+////        int userInput = getInteger(1, 10);
+//        if(min == 0){
+//            System.out.println("All Done!");
+//        }else{
+//            System.out.println(min);
+////            getInteger(1, 10);
+//            max--;
 //        }
+//        return getInteger(1,10);
+//    }
+
+
+
 
 
 
