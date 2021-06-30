@@ -174,28 +174,28 @@ public class MethodsExercises {
 
     // .2 *** Casey's solution (and another way of doing it) *** \\
 
-    public static void main(String[] args) {
-       int validInput = getInteger(1,10, new Scanner(System.in));
-
-        System.out.printf("You entered a valid number: %s", validInput);
-    }
-
-
-    public static int getInteger(int min, int max, Scanner scanner){
-
-        int userInput = 0;
-
-        System.out.printf("Please enter a number between %s and %s");
-        Scanner scanner = new Scanner(System.in);
-
-        userInput = scanner.nextInt();
-
-        if(userInput > max || userInput < min){
-            getInteger(min, max);
-        }
-
-        return userInput;
-    }
+//    public static void main(String[] args) {
+//       int validInput = getInteger(1,10, new Scanner(System.in));
+//
+//        System.out.printf("You entered a valid number: %s", validInput);
+//    }
+//
+//
+//    public static int getInteger(int min, int max, Scanner scanner){
+//
+//        int userInput = 0;
+//
+//        System.out.printf("Please enter a number between %s and %s");
+//        Scanner scanner = new Scanner(System.in);
+//
+//        userInput = scanner.nextInt();
+//
+//        if(userInput > max || userInput < min){
+//            getInteger(min, max);
+//        }
+//
+//        return userInput;
+//    }
 
 
     // .3 Calculate the factorial of a number.
