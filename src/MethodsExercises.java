@@ -157,8 +157,8 @@ public class MethodsExercises {
 //        int range = scanner.nextInt();
 //        getInteger(1, 10);
 //    }
-//
-//
+////
+////
 //    public static int getInteger(int min, int max) {
 //        Scanner scanner = new Scanner(System.in);
 ////        int userInput = getInteger(1, 10);
@@ -167,25 +167,25 @@ public class MethodsExercises {
 //        }else{
 //            System.out.println(min);
 ////            getInteger(1, 10);
-//            max--;
+//
 //        }
-//        return getInteger(1,10);
+//        return max--;
 //    }
 
 
 
     // .3 Calculate the factorial of a number.
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int input = scanner.nextInt();
-        FactorialNumber(input);
-    }
-
-    public static void FactorialNumber(int input){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter an integer from 1 to 10: ");
-    }
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        int input = scanner.nextInt();
+//        FactorialNumber(input);
+//    }
+//
+//    public static void FactorialNumber(int input){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter an integer from 1 to 10: ");
+//    }
 
 
 
