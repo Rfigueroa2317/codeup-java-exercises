@@ -174,8 +174,18 @@ public class MethodsExercises {
 
 
 
+    // .3 Calculate the factorial of a number.
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        FactorialNumber(input);
+    }
 
+    public static void FactorialNumber(int input){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter an integer from 1 to 10: ");
+    }
 
 
 
