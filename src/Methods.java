@@ -184,23 +184,34 @@ public class Methods {
 //     left.
 
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How many miles are you running today? ");
-        int milesRan = scanner.nextInt();
-        MilesLeft(milesRan);
-    }
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("How many miles are you running today? ");
+//        int milesRan = scanner.nextInt();
+//        MilesLeft(milesRan);
+//    }
+//
+//    public static void MilesLeft(int miles){
+//        if(miles >= 0){
+//            System.out.println("You have " + miles + "Left.");
+//
+//            miles--;
+//            System.out.println("miles: " + miles);
+//            MilesLeft(miles);
+//        }
+//    }
 
-    public static void MilesLeft(int miles){
-        if(miles >= 0){
-            System.out.println("You have " + miles + "Left.");
 
-            miles--;
-            System.out.println("miles: " + miles);
-            MilesLeft(miles);
-        }
-    }
+    // *** Internet example for different methods *** \\
 
-
+//    public static void main(String[] args) {
+//        add(0, 0);
+//    }
+//    public static void add(int a, int b){
+//        System.out.println(a + b);
+//    }
+    // you can do it like this in a simpler way. although you would still
+    // need the scanner if you want the user to interact with it in the
+    // console
 }
 

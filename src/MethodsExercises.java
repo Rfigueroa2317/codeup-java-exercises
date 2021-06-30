@@ -93,26 +93,41 @@ public class MethodsExercises {
     // *** Easier way of doing it *** \\
 
     public static void main(String[] args) {
-        add(5, 5);
-        subtract(4, 4);
-        multiply(8, 8);
-        divide(3,3);
-        modulus(7, 5);
+        Scanner scanner = new Scanner(System.in);
+
+        add(0,0);
+//        subtract(4, 4);
+//        multiply(8, 8);
+//        divide(3,3);
+//        modulus(7, 5);
     }
     public static void add(int a, int b){
-        System.out.println(a * b);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("do the addition: ");
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+//        System.out.println(a + b);
+        System.out.println(num1 + num2);
     }
 
     public static void subtract(int a, int b){
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println(a - b);
     }
     public static void multiply(int a, int b){
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println(a * b);
     }
     public static void divide(int a, int b){
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println(a / b);
     }
     public static void modulus(int a, int b){
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println(a % b);
     }
 
