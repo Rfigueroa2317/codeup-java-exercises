@@ -90,17 +90,45 @@ public class MethodsExercises {
 //
 //    }
 
-    // .2 Create a method that validates that user input is in a certain range
+    // *** Easier way of doing it *** \\
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        add(5, 5);
+        subtract(4, 4);
+        multiply(8, 8);
+        divide(3,3);
+        modulus(7, 5);
+    }
+    public static void add(int a, int b){
+        System.out.println(a * b);
     }
 
-        public static int getInteger(int min, int max){
-        int userInput = getInteger(1, 10);
-        return getInteger();
-        }
+    public static void subtract(int a, int b){
+        System.out.println(a - b);
+    }
+    public static void multiply(int a, int b){
+        System.out.println(a * b);
+    }
+    public static void divide(int a, int b){
+        System.out.println(a / b);
+    }
+    public static void modulus(int a, int b){
+        System.out.println(a % b);
+    }
+
+
+
+    // .2 Create a method that validates that user input is in a certain range
+
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//    }
+//
+//        public static int getInteger(int min, int max){
+//        int userInput = getInteger(1, 10);
+//        return getInteger();
+//        }
 
 
 
