@@ -9,7 +9,11 @@ public class Oberon {
 //  PRINT OUT A STRING THAT USES AT LEAST 3 OF THOSE PROPERTIES
 //  TO DESCRIBE THAT OBERON INSTANCE.
 
+    private int numOfStudents;
 
 
+    public Oberon(){
+
+    }
 
 }
