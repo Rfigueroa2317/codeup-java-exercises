@@ -21,7 +21,6 @@ public class Person {
     }
 
     public void sayHello(){
-        Scanner scanner = new Scanner(System.in);
         // TODO: print a message to the console using
         //  the person's name
         System.out.println("Hello!, my name is %s!"+ Ricardo);
