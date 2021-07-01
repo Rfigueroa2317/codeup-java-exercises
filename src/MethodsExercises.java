@@ -219,7 +219,14 @@ public class MethodsExercises {
 //    }
 
 
+    // *** use this to help you out for #3 \\
 
+//    public static long getFactorial(int num) {
+//        if (num >= 1)
+//            return num * getFactorial(num - 1);
+//        else
+//            return 1;
+//    }
 
 
 

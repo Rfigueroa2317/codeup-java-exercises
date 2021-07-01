@@ -17,4 +17,15 @@ public class AquaMammal extends MarineAnimal {
     private String name;
 
 
+    public AquaMammal(String blue_whale) {
+        super();
+    }
+
+    public int getMaxTimeSubmerged() {
+        return maxTimeSubmerged;
+    }
+
+    public void setMaxTimeSubmerged(int maxTimeSubmerged) {
+        this.maxTimeSubmerged = maxTimeSubmerged;
+    }
 }
