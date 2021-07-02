@@ -12,6 +12,7 @@ public class Rectangle {
        this.Area = Area;
        this.Perimeter = Perimeter;
 
+
     }
 
     public int getArea() {
