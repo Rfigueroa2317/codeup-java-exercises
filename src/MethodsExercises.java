@@ -231,16 +231,6 @@ public class MethodsExercises {
 
 
 
-
-
-
-
-
-
-
-
-
-
 }
 
 // function addTwoNumbers(param1, param2){
