@@ -66,9 +66,16 @@ public class ControlFlowExercises {
 
         System.out.println("Please enter a grade from 0 - 100: ");
         int input = sc.nextInt();
-        if(input == 100){
+        if(input <= 100 && input >= 88){
             System.out.println("That's an A!");
-//           *** work on this one ***
+        }else if(input <= 87 && input >= 80){
+            System.out.println("That's a B!");
+        }else if(input <= 79 && input >= 67){
+            System.out.println("That's a C");
+        }else if(input <= 66 && input >= 60){
+            System.out.println("That's a D");
+        }else {
+            System.out.println("That's an F...");
         }
     }
 }
