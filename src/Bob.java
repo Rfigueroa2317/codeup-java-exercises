@@ -23,9 +23,11 @@ public class Bob {
 //        String answer3 = "Fine. Be that way!"; // empty input (" ");
 //        String answer4 = "Whatever."; // to anything else
 //        System.out.println("");
-        String input = sc.next();
+//        String input = sc.next();
 
         System.out.println("Hey Bob how you doing?");
+        String input = sc.next();
+
         if(input.isEmpty()){
             System.out.println("Fine. Be that way!");
         }else if(input.endsWith("?")){
@@ -35,7 +37,6 @@ public class Bob {
         }else{
             System.out.println("Whatever");
         }
-
 
 
     }
