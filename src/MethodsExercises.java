@@ -206,7 +206,7 @@ public class MethodsExercises {
 
     }
 
-    public static void FactorialNumber(){
+    public static int FactorialNumber(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter an integer from 1 to 10: ");
         int input = scanner.nextInt();
@@ -215,9 +215,7 @@ public class MethodsExercises {
             number = number * i;
         }
         System.out.println("The Factorial of " + input + " is: " + number);
-
-        System.out.println("Would you like to continue?");
-        String answer = scanner.nextLine();
+        return input;
 
     }
 
