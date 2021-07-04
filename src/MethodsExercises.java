@@ -206,7 +206,7 @@ public class MethodsExercises {
 
     }
 
-    public static int FactorialNumber(){
+    public static long FactorialNumber(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter an integer from 1 to 10: ");
         int input = scanner.nextInt();
@@ -215,9 +215,12 @@ public class MethodsExercises {
             number = number * i;
         }
         System.out.println("The Factorial of " + input + " is: " + number);
+
         return input;
+        // *** needs factorial table *** \\
 
     }
+
 
 
     // *** use this to help you out for #3 \\
@@ -228,6 +231,9 @@ public class MethodsExercises {
 //        else
 //            return 1;
 //    }
+
+
+// 4. Create an application that simulates dice rolling.
 
 
 }
