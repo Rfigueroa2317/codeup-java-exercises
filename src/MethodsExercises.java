@@ -200,23 +200,26 @@ public class MethodsExercises {
 
     // .3 Calculate the factorial of a number.
 
-//    public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        int input = scanner.nextInt();
-//        int i =1;
-//        FactorialNumber(input);
-//    }
-//
-//    public static int FactorialNumber(int input){
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter an integer from 1 to 10: ");
-//        if(input == 0){
-//            return 1;
-//        }else{
-//
-//        }
-//        return (input * FactorialNumber(input-1));
-//    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        FactorialNumber();
+
+    }
+
+    public static void FactorialNumber(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter an integer from 1 to 10: ");
+        int input = scanner.nextInt();
+        long number = 1;
+        for (int i = 1; i <= input; i++){
+            number = number * i;
+        }
+        System.out.println("The Factorial of " + input + " is: " + number);
+
+        System.out.println("Would you like to continue?");
+        String answer = scanner.nextLine();
+
+    }
 
 
     // *** use this to help you out for #3 \\
@@ -227,8 +230,6 @@ public class MethodsExercises {
 //        else
 //            return 1;
 //    }
-
-
 
 
 }
