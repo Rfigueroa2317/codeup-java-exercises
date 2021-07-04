@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -245,8 +246,20 @@ public class MethodsExercises {
         System.out.println("Enter the number of sides for a pair of dice: ");
         int number = scanner.nextInt();
 
+        Random ranNum = new Random();
+
         System.out.println("Now roll the dice... ");
-        DiceGame();
+        int total = 0;
+        int randomNumber = 0;
+//        int rando = Math.random();
+
+        for (int i =0; i < number; i++){
+            randomNumber = ranNum.nextInt(6) + 1;
+            total = total + randomNumber;
+            System.out.println(randomNumber);
+        }
+
+        System.out.println("Total; " + total);
         return 0;
 
 
