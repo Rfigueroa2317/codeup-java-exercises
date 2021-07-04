@@ -200,26 +200,26 @@ public class MethodsExercises {
 
     // .3 Calculate the factorial of a number.
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        FactorialNumber();
-
-    }
-
-    public static long FactorialNumber(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter an integer from 1 to 10: ");
-        int input = scanner.nextInt();
-        long number = 1;
-        for (int i = 1; i <= input; i++){
-            number = number * i;
-        }
-        System.out.println("The Factorial of " + input + " is: " + number);
-
-        return input;
-        // *** needs factorial table *** \\
-
-    }
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        FactorialNumber();
+//
+//    }
+//
+//    public static long FactorialNumber(){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter an integer from 1 to 10: ");
+//        int input = scanner.nextInt();
+//        long number = 1;
+//        for (int i = 1; i <= input; i++){
+//            number = number * i;
+//        }
+//        System.out.println("The Factorial of " + input + " is: " + number);
+//
+//        return input;
+//        // *** needs factorial table *** \\
+//
+//    }
 
 
 
@@ -235,6 +235,23 @@ public class MethodsExercises {
 
 // 4. Create an application that simulates dice rolling.
 
+    public static void main(String[] args) {
+        DiceGame();
+    }
+
+    public static int DiceGame(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of sides for a pair of dice: ");
+        int number = scanner.nextInt();
+
+        System.out.println("Now roll the dice... ");
+        DiceGame();
+        return 0;
+
+
+
+    }
 
 }
 
