@@ -17,13 +17,13 @@ public class Manager extends Employee {
 //        System.out.println(Susy.doWork());
         System.out.println(Susy.nameOfEmployee + "works as a manager" + "the:" + Susy.department);
 
-        // we don't know what the implementation of thi is yet
-        EmployeeTwo Bob;
-        //logic goes here;
-        Bob = new ManagerTwo();
-        Bob.nameOfEmployee = "Bob";
-        Bob.department = "Sales";
-        System.out.println(Bob.nameOfEmployee + "works as a manager"+ "the: " + Bob.department);
+        // we don't know what the implementation of this is yet
+//        EmployeeTwo Bob;
+//        //logic goes here;
+//        Bob = new ManagerTwo();
+//        Bob.nameOfEmployee = "Bob";
+//        Bob.department = "Sales";
+//        System.out.println(Bob.nameOfEmployee + "works as a manager"+ "the: " + Bob.department);
     }
 
 

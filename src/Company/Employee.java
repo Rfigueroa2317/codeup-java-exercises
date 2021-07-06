@@ -14,11 +14,11 @@ abstract class Employee {
 
     // if you don't define method in abstract class, you must mark it
     // abstract
-    public abstract String doWork();
+//    public abstract String doWork();
 
-//    public String doWork(){
-//        return "I am working";
-//    }
+    public String doWork(){
+        return "I am working";
+    }
 
 
 }
