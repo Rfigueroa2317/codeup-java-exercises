@@ -8,9 +8,9 @@ public class TeamLead implements TimeSheets{
         System.out.println("Team Lead is filling out Timesheets.");
     }
 
-    @Override
-    public void firePeople(){
-        System.out.println("You're fired! later!");
-    }
+//    @Override
+//    public void firePeople(){
+//        System.out.println("You're fired! later!");
+//    }
 
 }
