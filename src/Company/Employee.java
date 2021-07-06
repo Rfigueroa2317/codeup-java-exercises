@@ -8,15 +8,18 @@ package Company;
 abstract class Employee {
     // define properties
     private String salary;
-    private String name;
+//    private String name;
+    public String nameOfEmployee;
+    public String department;
 
     // if you don't define method in abstract class, you must mark it
     // abstract
-//    public abstract String doWork();
+    public abstract String doWork();
 
-    public String doWork(){
-        return "I am working";
-    }
+//    public String doWork(){
+//        return "I am working";
+//    }
+
 
 }
 
