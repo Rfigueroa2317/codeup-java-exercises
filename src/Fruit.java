@@ -12,11 +12,14 @@ abstract class Fruit {
         this.size = size;
     }
 
-    
+
 
     public String isFruit(){
         return "I am Fruit";
     }
 
+    public static void main(String[] args) {
+
+    }
 
 }
