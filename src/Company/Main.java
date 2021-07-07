@@ -7,6 +7,10 @@ public class Main {
         TeamLead Bob = new TeamLead();
 
         Bob.fillOutTimesheets();
-        Bob.firePeople();
+//        Bob.firePeople();
+
     }
+
+
+
 }
