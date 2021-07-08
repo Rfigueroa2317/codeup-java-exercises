@@ -18,22 +18,22 @@ public class ArraysExercises {
 
         // Create an Array that holds 3 person objects.
 
-        String[] Persons = {"Ricardo", "Roxanne", "Ana"};
-        System.out.println(Persons.length);
+//        String[] Persons = {"Ricardo", "Roxanne", "Ana"};
+//        System.out.println(Persons.length);
 //        for (int i = 0; i < Person.length; i += 1){
 //            System.out.println(Person[i]);
 //        }
 
         // With Enhance method \\
-        for (String Person: Persons) {
-            System.out.println(Person);
-        }
+//        for (String Person: Persons) {
+//            System.out.println(Person);
+//        }
+
     }
 
+    static void addPerson(){
+        String[] Persons = {"Ricardo", "Roxanne", "Ana"};
 
-
-//    static void addPerson(){
-//
-//    }
+    }
 
 }
