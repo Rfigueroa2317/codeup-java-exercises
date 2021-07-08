@@ -16,17 +16,26 @@ public class ArrayLecture {
 //        String[] names = getNameArray();
 //        String[] moreNames = getNameArray();
 
-        String[] personOneNames = getNameArray();
+//        String[] personOneNames = getNameArray();
 //        String[] personTwoNames = getNameArray();
-        String[] personTwoNames = Arrays.copyOf(personOneNames,personOneNames.length);
+//        String[] personTwoNames = Arrays.copyOf(personOneNames,personOneNames.length);
 //        System.out.println(Arrays.equals(personOneNames, personTwoNames));
 //        System.out.println(Arrays.toString(personOneNames));
-        System.out.println(personOneNames);
-        System.out.println(personTwoNames);
+//        System.out.println(personOneNames);
+//        System.out.println(personTwoNames);
 
+//        Arrays.fill(personTwoNames, "Valspar");
 //        for (String name : names){
 //            System.out.println(name);
 //        }
+
+//        int[] intArr = getIntArray();
+//        System.out.println(Arrays.toString(intArr));
+//
+//        int[] sortedArr = Arrays.copyOf(intArr, intArr.length);
+//        Arrays.sort(sortedArr);
+//        System.out.println(Arrays.toString(sortedArr));
+
     }
 
 //    public static int[] getIntArray(int length) {
@@ -40,12 +49,12 @@ public class ArrayLecture {
 //        return intArray;
 //    }
 
-//    public static int[] getIntArray(){
-////        return new int[] {1,2,3};
+    public static int[] getIntArray(){
+        return new int[] {1,2,3};
 ////        int[] intArray = new int [] {1,2,3};
 ////        return intArray;
 //        // *** these two give you the same output *** \\
-//    }
+    }
 
 //    public static int[] getIntArray(int length){
 //        int[] intArray = new int[length];
