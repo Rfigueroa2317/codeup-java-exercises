@@ -12,7 +12,21 @@ public class ArrayLecture {
 //        System.out.println(Arrays.toString(intArray));
 
 //        System.out.println(Arrays.toString(getIntArray(10))); // "[1,2,3]"
-        System.out.println(Arrays.toString(getNameArray()));
+//        System.out.println(Arrays.toString(getNameArray()));
+//        String[] names = getNameArray();
+//        String[] moreNames = getNameArray();
+
+        String[] personOneNames = getNameArray();
+//        String[] personTwoNames = getNameArray();
+        String[] personTwoNames = Arrays.copyOf(personOneNames,personOneNames.length);
+//        System.out.println(Arrays.equals(personOneNames, personTwoNames));
+//        System.out.println(Arrays.toString(personOneNames));
+        System.out.println(personOneNames);
+        System.out.println(personTwoNames);
+
+//        for (String name : names){
+//            System.out.println(name);
+//        }
     }
 
 //    public static int[] getIntArray(int length) {
@@ -52,15 +66,16 @@ public class ArrayLecture {
 
     public static String[] getNameArray(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("How many names do you want to enter? ");
+        System.out.println("Enter your names, separated by spaces: ");
+        return scanner.nextLine().split(" ");
 
-        int namesLength = scanner.nextInt();
-        String[] namesArr = new String[(int)scanner.tokens().count()];
+//        int namesLength = scanner.nextInt();
+//        String[] namesArr = new String[(int)scanner.tokens().count()];
 
-        for (int i = 0; i < (int)scanner.tokens().count(); i++) {
-            namesArr[i] = scanner.next();
-        }
-        return namesArr;
+//        for (int i = 0; i < (int)scanner.tokens().count(); i++) {
+//            namesArr[i] = scanner.next();
+//        }
+//        return namesArr;
     }
 
 }
