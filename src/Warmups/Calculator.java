@@ -19,11 +19,10 @@ public class Calculator {
 
         System.out.println("Please enter first number: ");
         num1 = scanner.nextInt();
-        System.out.println("Please enter second number: ");
-        num2= scanner.nextInt();
         System.out.println("What operation? ");
         operator = scanner.next().charAt(0);
-
+        System.out.println("Please enter second number: ");
+        num2= scanner.nextInt();
         switch (operator) {
             case '+': answer = num1 + num2;
                     break;
@@ -31,7 +30,7 @@ public class Calculator {
                     break;
             case '*': answer = num1 * num2;
                     break;
-            case '/': answer = num1/num2;
+            case '/': answer = num1 / num2;
                     break;
         }
         System.out.println(num1+" "+ operator + " " +" "+num2+ " = "+ answer);
