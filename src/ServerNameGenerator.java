@@ -15,7 +15,8 @@ public class ServerNameGenerator {
     String[] nouns = {"people","history","art","world","system"
             ,"computer","food","knowledge","power","ability"};
 
-
+    public static class RandomElement {
+    }
 
 
 
