@@ -21,6 +21,13 @@ public class CollectionsExamples {
         // length; meaning that once they are created they cannot change
         // their length. In order to "add" an item to an array, you must
         // make a copy of the array with a length bigger than the original.
+        // Think of an 'ArrayList' as a wrapper around the native Java array
+        // that handles the details of resizing the array to add elements
+        // for you.
+
+        // 'ArrayList's are used a little differently than arrays are; they
+        // have methods that handle common array operations, as opposed to
+        // using the Arrays helper class and passing the instance.
 
 
 
