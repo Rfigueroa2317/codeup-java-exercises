@@ -100,6 +100,44 @@ public class ArrayExamples {
         //  .Sorts the elements of an array into ascending order.
 
 
+        // *** Two-Dimensional Arrays *** \\
+
+        // A two-dimensional array in Java is nothing but
+        // an Array of Arrays. A collection of data cells. 2-D
+        // arrays work in the same way as 1-D arrays in most ways;
+        // however, unlike 1-D arrays, they allow you to specify both
+        // a column index and a row index. All the data in a 2D array
+        // is of the same type.
+
+        int [][] matrix = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+
+        // access the first element in the second row
+//        System.out.println(matrix[1][0]); // 4
+//        // the last element in the first row
+//        System.out.println(matrix[0][2]); // 3
+//        // the first element in the last row
+//        System.out.println(matrix[2][0]); // 7
+
+        // we can also iterate over the rows in a matrix, and,
+        // within the loop iterating over the rows, iterate
+        // over each element in each row with a nested loop:
+
+        for (int[] row: matrix) {
+            System.out.println("+---+---+---+");
+            System.out.print("| ");
+            for (int n: row) {
+                System.out.print(n + " | ");
+            }
+            System.out.println();
+        }
+        System.out.println("+---+---+---+");
+
+
+        // *** FIN *** \\
     }
 
 }
