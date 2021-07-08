@@ -71,12 +71,34 @@ public class ArrayExamples {
         // to hold each element, and the type of each element
         // in the collection.
 
-        int[] numbers = {1,2,3,4,5};
-        for (int n : numbers){
-            System.out.println(n);
+//        int[] numbers = {1,2,3,4,5};
+//        for (int n : numbers){
+//            System.out.println(n);
+//
+//            //output is all the numbers in in the int numbers array.
+//        }
 
-            //output is all the numbers in in the int numbers array.
-        }
+        // *** Arrays Class *** \\
+
+        // The 'java.util.Arrays' class contains static methods for common
+        // array manipulation tasks. All methods can accept arrays of
+        // primitive data types of or objects, and all index arguments must
+        // be of the type 'int'. Some of the most common methods are:
+
+        //void Arrays.fill(arrayName, value)
+        //  .Fills all elements of the specified array with the
+        //   specified value.
+
+        //boolean Arrays.equals(array1, array2)
+        //  .Returns true if both arrays are of the same type and all
+        //   of the elements within the arrays are equal to each other.
+
+        //array Arrays.copyOf(array, length)
+        //  .Returns a string representation of the array.
+
+        //void Arrays.sort(array)
+        //  .Sorts the elements of an array into ascending order.
+
 
     }
 
