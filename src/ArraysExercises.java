@@ -40,16 +40,19 @@ public class ArraysExercises {
         for (String person: persons) {
             System.out.println(person);
         }
-//        person1.setName("Raul");
-//        System.out.println(Arrays.toString(persons));
+        person1.setName("Raul");
+        System.out.println("after setName " + person1.getName());
+
+        System.out.println(Arrays.toString(persons));
+
         Person person4 = new Person("Raul");
         String[] newUpdatedPeople = addPerson(persons, person4);
         System.out.println(Arrays.toString(newUpdatedPeople));
     }
 
-    public static String[] addPerson(String[] people, Person name){
+    public static String[] addPerson(String[] people, Person newPerson){
         String[] newArr = Arrays.copyOf(people, people.length + 1);
-        newArr[people.length] = name.getName();
+        newArr[people.length] = newPerson.getName();
         return newArr;
     }
 
