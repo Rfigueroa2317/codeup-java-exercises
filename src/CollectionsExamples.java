@@ -62,21 +62,57 @@ public class CollectionsExamples {
         //  methods on them that allow us to easily inspect their contents.
 
 
+        // We'll start by defining an array list and adding some items to it
+        ArrayList<String> roasts = new ArrayList<>();
+        roasts.add("light");
+        roasts.add("medium");
+        roasts.add("dark");
+
+        System.out.println(roasts);
+
         // There are some common methods for working with 'ArrayList':
 
         //  .contains = checks if a collection contains a given element.
 
+            roasts.contains("dark"); // true
+            roasts.contains("espresso"); // false
+
         //  .lastIndexOf = finds the last index of the given element,
         //      -1 if not found.
 
+            roasts.lastIndexOf("medium"); // 2
+
         //  .isEmpty = checks if the list is empty.
+
+            roasts.isEmpty(); // false
+            ArrayList<String> emptyList = new ArrayList<>();
+            emptyList.isEmpty();
 
         //  .remove = remove the first occurrence of an item, or an
         //      item at a given index.
 
+            roasts.remove("espresso"); // false
+            roasts.remove("medium"); // true
+            System.out.println(roasts); // [light, medium, dark]
 
-        //
+            roasts.remove(2); // "dark"
+            System.out.println(roasts); // [light, medium]
+
+        // Note that the return value of '.remove' depends on how it is invoked.
+
+        // When an index is passed, the removed element is returned. When and
+        //  object is passed, a boolean indicating whether an item was removed
+        //  is returned.
 
 
+        // *** Hash Maps *** \\
+
+        // A hash map is a data structure for key-value pairs, implemented with
+        //  the HashMap class in Java. These are similar to objects in JavaScript.
+        //  All the keys in the hash map must be of the same type, and all the values
+        //  must be of the same type, but the keys and the values don't necessarily
+        //  have to be the same type.
+
+        //  Here are some basic methods for working with has maps:
     }
 }
