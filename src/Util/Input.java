@@ -39,7 +39,12 @@ public class Input {
     }
 
     public double getDouble(double min, double max){
-        return 5;
+        double random =(double) Math.floor(Math.random() * 100);
+        System.out.println(random);
+        if(random >= min && random <= max){
+            return random;
+        }
+        return -1;
     }
 
     public double getDouble(){

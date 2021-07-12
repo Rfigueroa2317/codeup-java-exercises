@@ -9,6 +9,9 @@ public class InputTest {
 
         System.out.println(input.getInt(0, 10));
         input.setUserInput();
+
+        System.out.println(input.getDouble(0, 10));
+        input.getDouble();
     }
 
 
