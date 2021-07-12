@@ -23,11 +23,10 @@ public class GradesApplication {
         // 1. create a new instance of a Student class (Student one = new Student())
         // 2. one.addGrades(88) to the `one` student instance
         // 3. students.put(username, one)
-        students.put("ryanorsinger", );
-        students.put("Zach","zgulde");
-        students.put("Fernando", "fmendozaro");
-        students.put("Justin", "jreich5");
-
+//        students.put("ryanorsinger", );
+//        students.put("Zach","zgulde");
+//        students.put("Fernando", "fmendozaro");
+//        students.put("Justin", "jreich5");
 
 //        {"ryanorsinger" {grades: 90, 80, 70}}
 
