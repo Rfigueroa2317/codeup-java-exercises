@@ -137,16 +137,16 @@ public class CollectionsExamples {
         usernames.containsKey("Justin"); // true
         usernames.containsValue("fmendozaro"); // true
 
+        // *** Things to note: *** \\
+
+        //  . Like 'ArrayList', we must define the type of the keys and values
+        //  when the hash map is created.
+
+        //  . Hash maps also have nice string representation.
 
 
 
-
-
-
-
-
-
-
+        // *** FIN *** \\
 
     }
 }
