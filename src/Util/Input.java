@@ -48,7 +48,12 @@ public class Input {
     }
 
     public double getDouble(){
-        return 5;
+        double random =(double) Math.floor(Math.random() * 100);
+        System.out.println(random);
+        if(random >= 10){
+            return random;
+        }
+        return -1;
     }
 
 
