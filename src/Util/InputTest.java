@@ -6,6 +6,9 @@ public class InputTest {
         Input input = new Input();
         boolean userInput = input.yesNo("yes");
         System.out.println(userInput);
+
+        System.out.println(input.getInt(0, 10));
+        input.setUserInput();
     }
 
 

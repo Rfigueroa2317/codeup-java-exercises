@@ -10,6 +10,12 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
+    public void setUserInput(){
+        System.out.println("enter a number: ");
+        String userInput = scanner.nextLine();
+        System.out.println("user entered: " + userInput);
+    }
+
     public String getString(){
         return "";
     }
@@ -25,9 +31,11 @@ public class Input {
 
     public int getInt(int min, int max){
         int random = (int) Math.floor(Math.random() * 100);
-        if(random <= 10){
+        System.out.println(random);
+        if(random >= min && random <= max){
+            return random;
         }
-        return 9;
+        return -1;
     }
 
     public double getDouble(double min, double max){
