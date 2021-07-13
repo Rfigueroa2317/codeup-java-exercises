@@ -1,6 +1,15 @@
 package Annotations;
 
+import java.util.ArrayList;
+
 public class AnnotationsExample {
+
+    // *** What is Annotations? *** \\
+    // Annotations are used to provide supplement information about
+    // a program. Annotations start with '@'. Annotations do not change
+    // action of a compiled program. Annotations help to associate
+    // metadata (information) to the program elements i.e. instance
+    // variables, constructors, methods, classes, etc.
 
     // Annotations are used to provide metadata for Java code. Annotations don't
     // modify the execution of code; however, they can be consumed in order to
@@ -102,5 +111,66 @@ public class AnnotationsExample {
     // the method definition, the mistake can be caught at compile-time;
     // that is, we can catch the mistake sooner rather than later.
 
+    // As another example, imagine another developer changed the name of the
+    // overridden method in the superclass, your subclass method would no longer
+    // override it. Without the @Override annotation you would not find out.
 
+//    Class Person {
+//        public String fullName(){
+//            // ...
+//        }
+//    }
+//
+//    class SuperHero extends Person {
+//        @Override
+//        public String alterEgo(){
+//            // ...
+//        }
+//    }
+
+    // The code above will produce an error because the alterEgo method
+    // has the @Override annotation, but it is not overriding a method from
+    // it's superclass, Person.
+
+
+    // *** @SuppressWarnings
+
+    // The @SuppressWarnings annotation makes the compiler suppress warnings
+    // for a given method. For instance, if a method makes an unchecked type cast,
+    // the compiler may generate a warning.
+
+//    @SuppressWarnings("unchecked")
+//    public List<String> languages() {
+//        return new ArrayList<>();
+//    }
+
+    // In the above example, the method is defined as returning a List<String>,
+    // but the actual return value is just a generic 'ArrayList' (<String> is not
+    // specified). Because of this, a warning about unchecked types will occur
+    // when the code is compiled.
+
+    // *** Unchecked type cast operations *** \\
+    // In general, you should always specify types whenever possible when using
+    // Java's collections. Sometimes situations arise where this is not possible,
+    // and we can't specify the type ahead of time. This is the scenario
+    // @SuppressWarnings was created for.
+
+    // There's a predefined set of valid values for the @SuppressWarning
+    // annotation. The most common are:
+    //  .all to suppress all warnings
+    //  .unchecked to suppress warnings relative to unchecked operations
+    //  .deprecation to suppress warnings relative to deprecation
+
+    // If you want to suppress more than one type of warning you can use
+    // the array initializer notation to specify the value for the annotation
+    // element:
+
+//    @SuppressWarnings({"deprecation","unchecked"})
+
+    // If this annotation was present on a class, the compiler would not
+    // warn us about any deprecated methods we are using, and would also
+    // not warn us about unchecked type operations.
+
+
+    // *** Fin *** \\
 }
