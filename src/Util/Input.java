@@ -56,5 +56,7 @@ public class Input {
         return -1;
     }
 
+    public void Circle(){
 
+    }
 }
