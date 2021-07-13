@@ -10,7 +10,8 @@ class Red {
 }
 
 class Orange extends Red {
-    @Override
+    @Override // comments for the compiler // it checks to see if that
+    // comment is doing what it's supposed to do
     public void show(){
         System.out.println("I am orange");
     }
@@ -24,3 +25,6 @@ public class Colors {
         orangeobj.show();   // I am orange
     }
 }
+
+//@Deprecated
+//usually above methods
