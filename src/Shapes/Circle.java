@@ -2,20 +2,25 @@ package Shapes;
 
 public class Circle {
 
-    private int radius;
+    private double radius;
+    private double PI = 3.1415;
 
-    public Circle(int radius) {
+    public Circle(double radius) {
         this.radius = radius;
         System.out.println("Test");
     }
 
     public double getArea(){
-        return 9;
+        double areaOfCircle = ((double) PI * (radius * Math.pow(2,2)));
+        System.out.println(areaOfCircle);
+        return areaOfCircle;
     }
 
 
     public double getCircumference(){
-        return 8;
+        double CircumferenceOfCircle = ((double) 2 * PI * radius);
+        System.out.println(CircumferenceOfCircle);
+        return CircumferenceOfCircle;
     }
 
 

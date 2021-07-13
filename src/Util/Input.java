@@ -59,4 +59,8 @@ public class Input {
     public void Circle(){
 
     }
+
+    public void CircleApp() {
+
+    }
 }

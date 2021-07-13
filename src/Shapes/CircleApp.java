@@ -1,6 +1,6 @@
 package Shapes;
 
-public class CircleApp {
 
+public class CircleApp {
 
 }

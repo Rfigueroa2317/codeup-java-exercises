@@ -13,6 +13,10 @@ public class InputTest {
         System.out.println(input.getDouble(0, 10));
         input.getDouble();
 
+        System.out.println();
+//        input.
+
+//        input.Circle();
     }
 
 
