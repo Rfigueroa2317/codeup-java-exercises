@@ -141,6 +141,19 @@ public class ExceptionsAndErrorHandlingExamples {
 
         // *** Types of Exceptions *** \\
 
+        // Exceptions are divided into two main categories: 'checked' and 'unchecked'.
+        // These are mostly exceptions that are built into the Java language, and do
+        // not need to be explicitly dealt with.
+
+        // In contrast to unchecked exceptions are checked exceptions. Checked
+        // exceptions must be handled in our code, either with a try-catch, or
+        // by declaring them in the method signature with the 'throws' keyword.
+        // Checked exceptions are enforced by the compiler, meaning that if a
+        // checked exception is not handled, the code will not compile.
+
+        // There exist a third category as well, 'Error'. errors represent something
+        // going very wrong, usually this is not something that we can anticipate or
+        // handle in our code.
 
         // *** TO BE CONTINUED *** \\
 

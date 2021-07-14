@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner scanner;
+    private static Scanner scanner;
 
     public Input() {
         scanner = new Scanner(System.in);
@@ -57,9 +57,10 @@ public class Input {
         return -1;
     }
 
-    public void Circle(){
-
-    }
+   public static int getRadius(){
+       System.out.println("enter radius: ");
+       return scanner.nextInt();
+   }
 
     public void CircleApp() {
 
