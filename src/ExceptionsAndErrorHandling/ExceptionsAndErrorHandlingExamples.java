@@ -60,29 +60,89 @@ public class ExceptionsAndErrorHandlingExamples {
 
         // Here is a generic form of what a try-catch block looks like:
 
-        try {
-            // something that
-            // might go wrong
-        } catch (Exception e) {
-            // handle the error
-        }
+//        try {
+//            // something that
+//            // might go wrong
+//        } catch (Exception e) {
+//            // handle the error
+//        }
 
         // Ex:
 
-        try {
-            System.out.println("Let's see...");
-            int result = 1/ 0;
-            System.out.println("I can divide by zero!");
-        } catch (ArithmeticException e) {
-            System.out.println("Math still works!");
-        }
+//        try {
+//            System.out.println("Let's see...");
+//            int result = 1/ 0;
+//            System.out.println("I can divide by zero!");
+//        } catch (ArithmeticException e) {
+//            System.out.println("Math still works!");
+//        }
 
         // Gives you the output:
             // Let's see...
             //Math still works!
 
+        // When we try to divide by zero on the second line in the 'try' block,
+        // and 'ArithmeticException' is thrown. The next line in the block is
+        // skipped. Because we have a catch block that specifies that it is
+        // looking for an 'ArithmeticException', our application does not crash
+        // and print out a stack trace; instead, control is transferred to the
+        // body of the 'catch' block.
+
+        // We can specify multiple 'catch' blocks as part of a try-catch, but
+        // only the most specific of them will ever run. We can also specify a
+        // 'finally' block that will always run, regardless of if an exception
+        // is thrown or not.
+
+        int[] numbers = {1,2,3};
+        int x;
+
+        try {
+            x = numbers[100];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Caught an array index exception!");
+        } catch (Exception e) {
+            System.out.println("Caught a generic exception!");
+        } finally {
+            System.out.println("This will always run.");
+        }
+
+        // It will output:
+        // Caught an array index exception!
+        // This will always run.
+
+        // Note that only the most specific catch block executes. In the above
+        // example, we never reach the catch block for 'Exception' because a
+        // more specific catch block was invoked.
+
+        // *** Try-Catch Scope *** \\
+
+        // A try-catch block is a code block just like a body of an 'if'
+        // statement, or the body of a while loop is. Because of the way block
+        // scope works in Java, variables declared inside a try or catch block
+        // ** only exist in that block. **
+        // ** If you need to do assignment inside of a try-catch, declare the
+        // variables outside of the block, and assign to them inside the block. **
+
+        // So far, we have not used 'e', the object that represents the error
+        // that occurred. This object does have a handful of useful methods
+        // on it, most notably:
+
+        //  .getMessage = returns the exception message as a string
+
+        //  .printStackTrace = prints the full details of the exception
+        //              (where it occurred) to the console.
+
+        // **** 'e' is the object that represents the error that occurred.
+        //  'e' is just a variable. It stands for exception, but you can
+        //  rename it anything you like, however, the type has to remain
+        // 'Exception'. The 'e' variable stores an exception-type
+        // object in this case.
 
 
+        // *** Types of Exceptions *** \\
+
+
+        // *** TO BE CONTINUED *** \\
 
     }
 }
