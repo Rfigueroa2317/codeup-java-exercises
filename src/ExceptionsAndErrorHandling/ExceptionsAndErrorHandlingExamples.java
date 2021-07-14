@@ -1,5 +1,7 @@
 package ExceptionsAndErrorHandling;
 
+import java.util.Scanner;
+
 public class ExceptionsAndErrorHandlingExamples {
     public static void main(String[] args) {
 
@@ -155,7 +157,46 @@ public class ExceptionsAndErrorHandlingExamples {
         // going very wrong, usually this is not something that we can anticipate or
         // handle in our code.
 
+        // Some of the three main base classes:
+
+        // Exception
+        //  .Errors our code should prepare for.
+        //  .Generally, any custom exceptions we create will subclass 'Exception'.
+        //  .For example: 'FileNotFoundException', or 'SQLException'.
+
+        // RuntimeException
+        //  .Things that can go wrong, but that we can usually prevent programmatically
+        //  .'ArrayIndexOutOfBoundsException','NullPointerException', and 'IllegalArgumentException'
+        //      are all examples of runtime exceptions.
+
+        // Error
+        //  .A serious problem.
+        //  .Usually occurs at the OS or JVM level.
+        //  .'OutOfMemoryError', or'StackOverflowError'.
+
+
+        // *** Working with Checked Exceptions *** \\
+
+        // To illustrate how checked exceptions work, let's take a look at a
+        // small sample application that prompts users for their indentation
+        // preferences. This code will raise an exception if something drastic
+        // occurs (the user prefers the wrong type of indentation).
+
+        // *** THIS EXAMPLE HAS TO BE OUTSIDE THE MAIN METHOD FOR IT TO WORK *** \\
+//        public static String getIndentationPreference() throws Exception {
+//            Scanner sc = new Scanner(System.in);
+//            System.out.print("What type of indentation do you prefer?");
+//            String indentationPreference = sc.nextLine();
+//
+//            if(indentationPreference.equals("tabs")) {
+//                throw new Exception("Spaces are superior!");
+//            }
+//
+//            return indentationPreference;
+//        }
+
         // *** TO BE CONTINUED *** \\
 
     }
+
 }
