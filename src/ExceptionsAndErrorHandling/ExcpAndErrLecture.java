@@ -18,7 +18,7 @@ public class ExcpAndErrLecture {
         // THROW
 //        impossible(8, 1);
 
-        newBankAccount(201, 17);
+//        newBankAccount(199, 13);
     }
 
 
@@ -54,12 +54,30 @@ public class ExcpAndErrLecture {
     //  not eligible, make sure to  throw an `NumberFormatException` if
     //  the user inputs anything that’s not a number (none, zero, zilch, nada, etc).
 
-    public static void newBankAccount(int Acct, int Age){
-        if((Age <= 16) && (Acct <= 200)){
-            throw new ArithmeticException();
-        }else {
-            System.out.println("Congrats you qualify!");
-        }
-    }
+//    public static void newBankAccount(int Acct, int Age){
+//        if((Age <= 16) && (Acct <= 200)){
+//            throw new ArithmeticException("No you can't open it!");
+//        }else {
+//            System.out.println("Congrats you qualify!");
+//        }
+//    }
+
+
+    // TRY - CATCH
+//    try {
+//        System.out.println("Let's see...");
+//        int result = 1 / 0;
+//        System.out.println("I can divide by zero!");
+//    } catch (ArithmeticException e) {
+//        System.out.println(e);
+//        System.out.println("Math still works!");
+//    }
+
+
+    // try-catch explained
+//    try {
+//        ... try some code ..
+//    }catch(Exception e)
+//    ... handle that exception being thrown
 
 }
