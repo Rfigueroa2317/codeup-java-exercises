@@ -95,18 +95,18 @@ public class ExceptionsAndErrorHandlingExamples {
         // 'finally' block that will always run, regardless of if an exception
         // is thrown or not.
 
-        int[] numbers = {1,2,3};
-        int x;
-
-        try {
-            x = numbers[100];
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Caught an array index exception!");
-        } catch (Exception e) {
-            System.out.println("Caught a generic exception!");
-        } finally {
-            System.out.println("This will always run.");
-        }
+//        int[] numbers = {1,2,3};
+//        int x;
+//
+//        try {
+//            x = numbers[100];
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            System.out.println("Caught an array index exception!");
+//        } catch (Exception e) {
+//            System.out.println("Caught a generic exception!");
+//        } finally {
+//            System.out.println("This will always run.");
+//        }
 
         // It will output:
         // Caught an array index exception!
@@ -182,7 +182,7 @@ public class ExceptionsAndErrorHandlingExamples {
         // preferences. This code will raise an exception if something drastic
         // occurs (the user prefers the wrong type of indentation).
 
-        // *** THIS EXAMPLE HAS TO BE OUTSIDE THE MAIN METHOD FOR IT TO WORK *** \\
+        // *** THIS EXAMPLE HAS TO BE OUTSIDE OF THE MAIN METHOD FOR IT TO WORK *** \\
 //        public static String getIndentationPreference() throws Exception {
 //            Scanner sc = new Scanner(System.in);
 //            System.out.print("What type of indentation do you prefer?");
@@ -195,8 +195,91 @@ public class ExceptionsAndErrorHandlingExamples {
 //            return indentationPreference;
 //        }
 
-        // *** TO BE CONTINUED *** \\
+        // Notice that, in addition to the method signature we are already
+        // familiar with, we've added 'throws Exception' to the method definition.
+        // This is one way to handle a checked exception.
 
+        // If a method contains a line of code that can cause an exception to be thrown
+        // (including an explicit 'throw' statement), the line must either be inside
+        // of a try-catch, or the exception must be added to the method's signature
+        // using 'throws'.
+
+        // Ex:
+
+        //inside main method***\\
+//        String indentationPreference;
+
+//        try {
+//            indentationPreference = getIndentationPreference();
+//            System.out.println("Okay, " + indentationPreference + " is a great choice.");
+//        } catch (Exception e) {
+//            System.out.println("Uh oh, something went");
+//            System.out.println("Here is some more detail:");
+//            e.printStackTrace();
+//        }
+
+        // Adding the exception to the method signature
+//        indentationPreference = getIndentationPreference();
+//        System.out.println("Okay " + indentationPreference + " is a great choice.");
+
+        // Notice that using an explicit try-catch allows us more control over
+        // how the error is handled. Using 'throws' indicates that the error
+        // handing is the responsibility of the code calling the method.
+
+
+        // *** Custon Exceptions *** \\
+
+        // In addition to the built-in exceptions in the Java language, we can
+        // create our own application-specific exceptions by extending the 'Exception'
+        // class. By convention, these classes are suffixed with 'Exception'. To
+        // illustrate, we can define a custom exception type for our previous example:
+
+//        class WrongIndentationTypeException extends Exception {}
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What type of indentation do you prefer?");
+//        String indentationPreference = scanner.nextLine();
+//
+//        if(indentationPreference.equals("tabs")) {
+//            WrongIndentationTypeException e;
+//            e = new WrongIndentationTypeException("Spaces are superior!");
+//            throw e;
+//        }
+
+        // Because exceptions are just objects, we can store them in a variable,
+        // declare, and initialize them just like any other object.
+
+
+        // ** Good Error Messages ** \\
+        // In general, exception messages should be helpful and descriptive
+        // of the problem that caused the exception, unlike the example above.
+        // A better message might look like:
+
+        // Error when getting user indentation preference.
+        // Input was "tabs", was expecting "spaces".
+
+        // It is very common to see custom exception classes that extend from
+        // Exception, but don't provide any additional functionality over the
+        // base 'Exception' class. This is done simply as a tool to express in
+        // code that there are errors specific to our application that we wish
+        // to treat differently than other, more general exceptions.
+
+
+        // ** Exceptions Best Practices ** \\
+        // Most likely you will be handling existing exceptions in the language
+        // than creating your own, so this previous section it's more about exposure.
+
+        // Remember to write clear sentences and include ending punctuation. Each
+        // sentence in the String assigned to the exception message should end in
+        // a period. For example, "The log table has overflowed." would be an
+        // appropriate message string.
+
+
+        // *** fin *** \\
+
+    }
+
+    private static String getIndentationPreference() {
+        return "";
     }
 
 }
