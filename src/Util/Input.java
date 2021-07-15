@@ -62,7 +62,10 @@ public class Input {
        return scanner.nextInt();
    }
 
-    public void CircleApp() {
+   public static int RectanglePractice(){
+       System.out.println("enter length: ");
+       System.out.println("enter width: ");
+       return scanner.nextInt();
+   }
 
-    }
 }
