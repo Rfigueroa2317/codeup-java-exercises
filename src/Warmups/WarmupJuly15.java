@@ -1,5 +1,7 @@
 package Warmups;
 
+import java.sql.Array;
+import java.util.List;
 import java.util.Random;
 
 public class WarmupJuly15 {
@@ -15,7 +17,9 @@ public class WarmupJuly15 {
     public static void main(String[] args) {
 
         String str = "Oberon is the best cohort ever!";
+
         Random random = new Random();
+        System.out.println(random);
 
         for (int i = 0; i < str.length(); i++) {
 
