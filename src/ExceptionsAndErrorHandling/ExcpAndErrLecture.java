@@ -1,6 +1,7 @@
 package ExceptionsAndErrorHandling;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ExcpAndErrLecture {
 
@@ -80,4 +81,38 @@ public class ExcpAndErrLecture {
 //    }catch(Exception e)
 //    ... handle that exception being thrown
 
+
+    // *** Errors *** \\
+
+    // ** Err ** \\
+    //  .OutOfMemory
+    //  .StackOverflow
+
+    // ** Checked ** \\
+    //  .Checked
+
+
+    // ** Unchecked ** \\
+    //  .IndexOutOfBounds
+    //  .NumberFormat
+
+
+    // CUSTOM EXCEPTION
+    Scanner sc = new Scanner(System.in);
+    String indentationPreference = sc.nextLine();
+
+    if(indentationPreference.equals("tabs")){
+        WrongIndentationTypeException e;
+        e = new WrongIndentationTypeException("Spaces are superior");
+        throws e;
+    }
+    return indentationPreference;
+
+    public String getIndentationPreference() {
+        return indentationPreference;
+    }
+
+    public void setIndentationPreference(String indentationPreference) {
+        this.indentationPreference = indentationPreference;
+    }
 }
