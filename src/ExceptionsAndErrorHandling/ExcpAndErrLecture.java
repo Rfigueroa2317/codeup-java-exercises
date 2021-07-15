@@ -101,18 +101,18 @@ public class ExcpAndErrLecture {
     Scanner sc = new Scanner(System.in);
     String indentationPreference = sc.nextLine();
 
-    if(indentationPreference.equals("tabs")){
-        WrongIndentationTypeException e;
-        e = new WrongIndentationTypeException("Spaces are superior");
-        throws e;
-    }
-    return indentationPreference;
-
-    public String getIndentationPreference() {
-        return indentationPreference;
-    }
-
-    public void setIndentationPreference(String indentationPreference) {
-        this.indentationPreference = indentationPreference;
-    }
+//    if(indentationPreference.equals("tabs")){
+//        WrongIndentationTypeException e;
+//        e = new WrongIndentationTypeException("Spaces are superior");
+//        throws e;
+//    }
+//    return indentationPreference;
+//
+//    public String getIndentationPreference() {
+//        return indentationPreference;
+//    }
+//
+//    public void setIndentationPreference(String indentationPreference) {
+//        this.indentationPreference = indentationPreference;
+//    }
 }

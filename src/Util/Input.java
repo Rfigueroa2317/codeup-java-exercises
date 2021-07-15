@@ -18,7 +18,8 @@ public class Input {
     }
 
     public String getString(){
-        return "";
+        System.out.println("Please enter a number: ");
+        return scanner.nextLine();
     }
 
     public boolean yesNo(String userInput){
@@ -39,6 +40,17 @@ public class Input {
         return -1;
     }
 
+    public int getInt(String input){
+        try {
+            return Integer.valueOf(input);
+        } catch (NumberFormatException e){
+            System.out.println("This wasn't a valid input: " + input);
+            return getInt(getString());
+        }
+    }
+
+
+
     public double getDouble(double min, double max){
         double random =(double) Math.floor(Math.random() * 100);
         System.out.println(random);
@@ -55,6 +67,16 @@ public class Input {
             return random;
         }
         return -1;
+    }
+
+    public double getDouble(String input){
+       try{
+           return Double.valueOf(input);
+       } catch (NumberFormatException e){
+           System.out.println("This wasn't a valid double: " + input);
+           return getDouble(getString());
+       }
+
     }
 
    public static int getRadius(){
