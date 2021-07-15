@@ -10,7 +10,7 @@ public class FileIOExample {
     //  .path = the location of a file in a filesystem
 
     // IO = In Java, it provides a set of input streams and a set of output
-    //      streams used to read and write data to files or other input
+    //      streams used to read and write data to fileIO.files or other input
     //      and output sources. There are three categories of classes in
     //      java.io: input streams, output streams and everything else.
 
