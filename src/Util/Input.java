@@ -68,4 +68,9 @@ public class Input {
        return scanner.nextInt();
    }
 
+   public static int SquarePractice(){
+       System.out.println("Please enter a value: ");
+       return scanner.nextInt();
+   }
+
 }
