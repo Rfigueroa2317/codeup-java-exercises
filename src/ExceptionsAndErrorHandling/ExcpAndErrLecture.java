@@ -115,4 +115,16 @@ public class ExcpAndErrLecture {
 //    public void setIndentationPreference(String indentationPreference) {
 //        this.indentationPreference = indentationPreference;
 //    }
+
+    // Difference between 'throw' and 'throws':
+
+    // 'Throw' is used to actually "throw" an exception (from the list of
+    // existing or a custom exception) or "make an exception show up" (think
+    // of it as a verb)
+
+    // 'Throws' is used always at the method signature (public static void
+    // nameOfMethod() throws Exception) and all it  does is it handles any
+    // `unchecked` exceptions that might be in that method that's being called
+    // from that method.
+
 }

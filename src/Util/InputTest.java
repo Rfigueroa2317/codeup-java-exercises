@@ -23,8 +23,9 @@ public class InputTest {
 
     public static void playMinMax() {
         Input input = new Input();
-//        System.out.println(input.getInt(input.getString()));
-//        System.out.println(input.getDouble(input.getString()));
+        System.out.println(input.getInt(input.getString()));
+        System.out.println(input.getDouble(input.getString()));
+
         double min = input.getDouble(input.getString());
         System.out.println("This is your min: " + min);
         double max = input.getDouble(input.getString());
