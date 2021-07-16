@@ -20,10 +20,13 @@ public class MorningWarmupJuly16 {
     }
 
 
-    public static int PrimeNumber(int inputNumber){
-        for (int i = 0; i < inputNumber/2; i++) {
-            if((inputNumber == 2)){
-            }
-        }
-    }
+//    public static int PrimeNumber(int inputNumber){
+//        for (int i = 0; i < inputNumber/2; i++) {
+//            if((inputNumber == 2)){
+//                return inputNumber;
+//            }else{
+//                return inputNumber;
+//            }
+//        }
+//    }
 }
