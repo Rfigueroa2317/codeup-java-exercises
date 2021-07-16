@@ -4,7 +4,7 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
-public class MroningWarmupJuly16 {
+public class MorningWarmupJuly16 {
 
     // Write a method named getTwentyPrimes()
     // that returns a string containing the first 20
@@ -15,14 +15,14 @@ public class MroningWarmupJuly16 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int prime = [1, 20];
-        PrimeNumber(prime);
+
+
     }
 
 
-    public static int PrimeNumber(int prime){
-        for (int i = 0; i < 20; i++) {
-            if((prime == 2)){
+    public static int PrimeNumber(int inputNumber){
+        for (int i = 0; i < inputNumber/2; i++) {
+            if((inputNumber == 2)){
             }
         }
     }
