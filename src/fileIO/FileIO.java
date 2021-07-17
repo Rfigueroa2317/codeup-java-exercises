@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class FileIO {
 
@@ -44,10 +45,13 @@ public class FileIO {
     }
 
     public static List<String> getContent(){
-        List<String> contentToWrite = new ArrayList<String>();
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.nextLine();
+        List<String> contentToWrite = new ArrayList<>();
         contentToWrite.add("This is a new line!");
         contentToWrite.add("This is another line!");
         contentToWrite.add("Another line!");
+        contentToWrite.add(userInput);
 
         return contentToWrite;
     }
