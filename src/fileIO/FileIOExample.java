@@ -180,7 +180,87 @@ public class FileIOExample {
     // *** Reading And Writing Files *** \\
 
 
-    // *** TO BE CONTINUED *** \\
+    // Now that we know how to handle paths and files, we can discuss how to
+    // read a file's contents, and how to write content to a file. While there are
+    // many methods in the Java standard library to accomplish this, we'll
+    // focus on two:
 
+    //  .Write a list of strings to a file
+
+    //      Path Files.write(Path filepath, List<String> lines[, StandardOpenOption
+    //          option])
+
+    //  .Each string in the 'lines' parameter will become one line in the file
+    //  .Default is to overwrite the existing file (or create a new one)
+    //  .The last argument is optional
+    //  .'StandardOpenOption.APPEND' can be used as the last argument to add to
+    //      an existing file
+
+    //  .Read the contents of a file
+
+    //      List<String> Files.readAllLines(Path filepath)
+
+    //  .Transforms each line in the file into a string
+    //  .Each element of the returned list is a string (one line from the file)
+
+    // Now let's take a look at some examples of working with these methods:
+
+    // Here's how we would create a list and write its contents to a file:
+
+    //      List<String> groceryList = Arrays.asList("coffee", "milk", "sugar");
+    //      Path filepath = Paths.get("data", "groceries.txt");
+    //      Files.write(filepath, groceryList);
+
+    // This code uses the '.asList' static method of the 'Arrays' class, which
+    // returns a new 'List' created from the arguments passed to it.
+
+    // After running the file 'data/groceries.txt', we will have the following
+    // contents:
+
+    //      coffee
+    //      milk
+    //      sugar
+
+    // For the rest of our examples, we'll assume that this file, 'data/groceries.txt',
+    // exists and has the contents shown above.
+
+    //  .Print out each line in an existing file, along with the line number
+
+    //      Path groceriesPath = Paths.get("data", "groceries.txt");
+    //      List<String> groceryList = Files.readAllLines(groceriesPath);
+
+    //      for (int i = 0; i < groceryList.size(); i += 1) {
+    //          system.out.println((i + 1) + ": " + groceryList.get(i));
+    //      }
+
+    // .Add a line to an existing file
+
+    //      Files.write(
+    //      Paths.get("data", "groceries.txt"),
+    //      Arrays.asList("eggs"), // list with one item
+    //      StandardOpenOption.APPEND
+    //      );
+
+    // By using 'StandardOpenOption.APPEND', we are able to add lines to
+    // the existing file, instead of overwriting its contents.
+
+    // .Replace "milk" with "cream"
+
+    //      List<String> lines = Files.readAllLines(Paths.get("data", "groceries.txt"));
+    //      List<String> newList = new ArrayList<>();
+
+    //      for (String line : lines) {
+    //          if (line.equals("milK")) {
+    //              newList.add("cream"));
+    //              continue;
+    //         }
+    //          newList.add(line);
+    //      }
+
+    //      Files.write(Paths.get("data", "groceries.txt"), newList);
+
+
+
+    // *** Fin *** \\
 
 }
