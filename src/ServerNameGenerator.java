@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -15,7 +17,7 @@ public class ServerNameGenerator {
     }
 
     private static void GettingRandomElement() {
-        Random rand = new Random();
+        Random random = new Random();
         String[] adjectives = {"agreeable","anxious","busy"
                 ,"blue","comfortable", "curious","distinct"
                 ,"excited","hungry","jittery"};
@@ -23,18 +25,17 @@ public class ServerNameGenerator {
                 ,"computer","food","knowledge","power","ability"};
 
         for (String adjective : adjectives) {
-            System.out.println(adjective);
+//            System.out.println(adjective);
         }
 
         for (String noun : nouns) {
-            System.out.println(noun);
+//            System.out.println(noun);
         }
 
-        String RandomAdj = rand.toString();
+//        String RandomAdj = random.
 
-        System.out.println(Arrays.toString(adjectives));
-        System.out.println(Arrays.toString(nouns));
+        System.out.println("Here's your server name: " + adjectives[random.nextInt(10)] + " " + nouns[random.nextInt(10)]);
+
     }
-
 
 }
