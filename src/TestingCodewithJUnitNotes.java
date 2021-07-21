@@ -166,20 +166,24 @@
 //        this.names.add("Zach");
 //        assertEquals(2, this.names.size());
 //        assertSame("fer", this.names.get(0));
+// when setting value to 2 and tries to debug it makes the program crash
 //        assertSame("Zach", this.names.get(1));
 //    }
+
+// // *** Test-driven Development Cycle *** \\
 //
+//    // The following develeopment is inspired by the book 'Test-Driven
+//    // Development by example' by 'Kent Beck'. It is basically a list of
+//    // steps that can be taken to test your code to make sure that it works:
 //
+//    // 1. Add a test
+//    // 2. Run all tests and see if the new test fails
+//    // 3. Write the code
+//    // 4. Run tests
+//    // 5. Refactor code
+//    // 6. Repeat until the feature is complete
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 //}
 //public class TestingCodewithJUnitNotes {
 //}
