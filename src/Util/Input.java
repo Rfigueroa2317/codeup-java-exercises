@@ -1,5 +1,7 @@
 package Util;
 
+import movies.MoviesApplication;
+
 import java.util.Scanner;
 
 
@@ -93,6 +95,11 @@ public class Input {
    public static int SquarePractice(){
        System.out.println("Please enter a value: ");
        return scanner.nextInt();
+   }
+
+   public static String MoviesApplication(){
+       MoviesApplication moviesApplication = new MoviesApplication();
+       return "test";
    }
 
 }
