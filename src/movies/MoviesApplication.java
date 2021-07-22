@@ -1,4 +1,5 @@
 package movies;
+
 import movies.MoviesArray;
 import movies.Movie;
 import Util.Input;
@@ -12,27 +13,59 @@ public class MoviesApplication {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Search for a movie: ");
-        System.out.println("1. view all movies. \n" +
-                "2. View movies in the animated category. \n" +
-                "3. view movies in the drama category. \n" +
-                "4. view movies in the horror category. \n" +
-                "5. view movies in the scifi category. \n"
-                + "Enter your choice: ");
-        String userInput = scanner.next();
-        switch (userInput){
-            case "1":
-               MoviesArray movies = new MoviesArray();
-                for (int i = 0; i < MoviesArray.findAll().length; i++) {
-                    System.out.println(MoviesArray.findAll().length);
-                }
-            case "2":
+        boolean Menu = true;
+        do {
+            System.out.println("Search for a movie: ");
+            System.out.println("0. exit \n" + "1. view all movies. \n" +
+                    "2. View movies in the animated category. \n" +
+                    "3. view movies in the drama category. \n" +
+                    "4. view movies in the horror category. \n" +
+                    "5. view movies in the scifi category. \n"
+                    + "Enter your choice: ");
+            String userInput = scanner.next();
+            Movie[] movies = MoviesArray.findAll();
 
-        }
+            switch (userInput) {
+                case "0":
+                    System.out.println("Have a good day!");
+                    break;
+                case "1":
+                    for (Movie movie : movies) {
+                        System.out.println(movie.getName() + " - " + movie.getCategory());
+                    }
+                    break;
+                case "2":
+                    for (Movie movie : movies) {
+                        if (movie.getCategory().equals("animated")) {
+                            System.out.println(movie.getName() + " - " + movie.getCategory());
 
-//        MoviesArray moviesArray = new MoviesArray();
+                        }
+                    }
+                    break;
+                case "3":
+                    for (Movie movie : movies) {
+                        if (movie.getCategory().equals("drama")) {
+                            System.out.println(movie.getName() + " - " + movie.getCategory());
+                        }
+                    }
+                    break;
+                case "4":
+                    for (Movie movie : movies) {
+                        if (movie.getCategory().equals("horror")) {
+                            System.out.println(movie.getName() + " - " + movie.getCategory());
+                        }
+                    }
+                    break;
+                case "5":
+                    for (Movie movie : movies) {
+                        if (movie.getCategory().equals("scifi")) {
+                            System.out.println(movie.getName() + " - " + movie.getCategory());
+                        }
+                    }
+                    break;
+            }
 
-
+        } while (Menu);
     }
 
 }
