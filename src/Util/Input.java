@@ -1,6 +1,7 @@
 package Util;
 
 import movies.MoviesApplication;
+import movies.MoviesArray;
 
 import java.util.Scanner;
 
@@ -99,7 +100,7 @@ public class Input {
 
    public static String MoviesApplication(){
        MoviesApplication moviesApplication = new MoviesApplication();
-       return "test";
+       return "Movies";
    }
 
 }
