@@ -18,9 +18,9 @@ public class RecPracApp {
 
         int area = length * width;
 
-        RectanglePractice rectanglePractice = new RectanglePractice(area);
-
-        System.out.println("The area of the rectangle is: " + rectanglePractice.area);
+//        RectanglePractice rectanglePractice = new RectanglePractice(area);
+//
+//        System.out.println("The area of the rectangle is: " + rectanglePractice.area);
 
 
 
