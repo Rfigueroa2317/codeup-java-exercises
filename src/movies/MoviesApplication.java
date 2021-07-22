@@ -1,6 +1,8 @@
 package movies;
 import movies.MoviesArray;
+import movies.Movie;
 import Util.Input;
+
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -19,11 +21,10 @@ public class MoviesApplication {
         String userInput = scanner.next();
         switch (userInput){
             case "1":
-               MoviesArray moviesArray = new MoviesArray();
-               for (movie : moviesArray) {
-                   System.out.println(Arrays.toString(MoviesArray.findAll()));
-               }
-//                MoviesArray.findAll();
+               MoviesArray movies = new MoviesArray();
+                for (int i = 0; i < MoviesArray.findAll().length; i++) {
+                    System.out.println(MoviesArray.findAll().length);
+                }
             case "2":
 
         }
