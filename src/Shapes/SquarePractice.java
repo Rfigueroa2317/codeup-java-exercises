@@ -15,6 +15,16 @@ public class SquarePractice extends Quadrilateral {
         this.width = width;
     }
 
+    @Override
+    public double getPerimeter() {
+        return this.length * 4;
+    }
+
+    @Override
+    public double getArea() {
+        return this.length * this.length;
+    }
+
 //    private final int area;
 //
 //    public SquarePractice(int area) {
