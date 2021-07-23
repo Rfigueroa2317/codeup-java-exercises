@@ -1,5 +1,8 @@
 package grades;
 
+import Util.Input;
+
+
 import java.util.HashMap;
 
 public class GradesApplication {
@@ -46,7 +49,26 @@ public class GradesApplication {
         students.put("Cristina", student2);
         students.put("Ana", student3);
 
-        
+        Input input = new Input();
+
+        String[] studentList = students.keySet().toArray(new String[0]);
+        for(String user: studentList)
+            System.out.println(user);
+
+        do {
+            System.out.println("Which student's info do you wanna look at?");
+            String userInput = input.getString();
+            Student target = students.get(userInput);
+
+            if(students.containsKey(userInput)){
+                System.out.println("name: " + target.getName() + " " + userInput +
+                        "Current Average: " + target.getGradeAverage());
+                System.out.println("Continue?");
+            }else{
+                System.out.println("Thank you. Have a nice day!");
+
+            }
+        }while (input.yesNo());
 
     }
 }

@@ -1,7 +1,6 @@
 package Util;
 
 import movies.MoviesApplication;
-import movies.MoviesArray;
 
 import java.util.Scanner;
 
@@ -103,4 +102,8 @@ public class Input {
        return "Movies";
    }
 
+
+    public boolean yesNo() {
+        return true;
+    }
 }

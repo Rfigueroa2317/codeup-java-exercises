@@ -34,4 +34,8 @@ public class Student {
         return sum / grades.size();
     }
 
+    public boolean yesNo() {
+        return true;
+    }
+
 }
