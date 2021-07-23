@@ -5,7 +5,9 @@ import java.util.HashMap;
 public class GradesApplication {
     public static void main(String[] args) {
 
-        Student studentOne = new Student("RicardoWhatever");
+        HashMap<String, Student> students = new HashMap<>();
+
+        Student studentOne = new Student("Ricardo");
 
         studentOne.addGrade(90);
         studentOne.addGrade(80);
@@ -13,11 +15,14 @@ public class GradesApplication {
 
         System.out.println(studentOne.getGradeAverage());
 
-        // created hashMap with the key = string, value = Student instance
-        HashMap<String, Student> students = new HashMap<>();
-        // how to assign the github username as a key within the HashMap
-        // how to assign a `Student` object as the value
-        // how to save 3 grades inside of the `Student` obj
+
+        Student student = new Student("Joel");
+
+        student.addGrade(91);
+        student.addGrade(90);
+        student.addGrade(85);
+
+        System.out.println(student);
 
 
         // 1. create a new instance of a Student class (Student one = new Student())

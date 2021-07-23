@@ -1,8 +1,13 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student {
+
+    public static void main(String[] args) {
+
+    }
 
     private String name;
 
