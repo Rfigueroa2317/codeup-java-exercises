@@ -24,17 +24,29 @@ public class GradesApplication {
 
         System.out.println(student);
 
+        Student student2 = new Student("Cristina");
 
-        // 1. create a new instance of a Student class (Student one = new Student())
-        // 2. one.addGrades(88) to the `one` student instance
-        // 3. students.put(username, one)
-//        students.put("ryanorsinger", );
-//        students.put("Zach","zgulde");
-//        students.put("Fernando", "fmendozaro");
-//        students.put("Justin", "jreich5");
+        student2.addGrade(85);
+        student2.addGrade(79);
+        student2.addGrade(81);
 
-//        {"ryanorsinger" {grades: 90, 80, 70}}
+        System.out.println(student2);
 
-        System.out.println(students);
+        Student student3 = new Student("Ana");
+
+        student3.addGrade(59);
+        student3.addGrade(65);
+        student3.addGrade(75);
+
+        System.out.println(student3);
+
+
+        students.put("Ricardo",studentOne);
+        students.put("Joel",student);
+        students.put("Cristina", student2);
+        students.put("Ana", student3);
+
+        
+
     }
 }
