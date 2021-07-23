@@ -74,4 +74,9 @@ public class MySQLLecture {
 
     // SELECT current user - to find the current user
     // SELECT user, host FROM mysql.user; - To list a table of users
+
+
+    // MySQL Databases \\
+
+    // Database -
 }
