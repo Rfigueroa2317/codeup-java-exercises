@@ -57,6 +57,7 @@ public class GradesApplication {
 
         do {
             System.out.println("Which student's info do you wanna look at?");
+
             String userInput = input.getString();
             Student target = students.get(userInput);
 
