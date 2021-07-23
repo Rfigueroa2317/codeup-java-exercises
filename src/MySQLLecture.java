@@ -40,8 +40,8 @@ public class MySQLLecture {
     //                      send commands to display data on screen
     // . We can connect to the database
     // the command to connect to the terminal is:
-    // mysql -u root -p
-    // password: codeup
+    // *** mysql -u root -p ***
+    // *** password: codeup ***
     // you will not see it and that's intentional. It is for security purposes
 
     // On Exercises:
@@ -60,4 +60,18 @@ public class MySQLLecture {
     // Same as the ones above. One will give you the table option,
     // The other one will give you the row option. Both giving you
     // the same info.
+    // q will get you out of the row or table command
+
+
+    // *** Database users *** \\
+
+    // We are going to learn how to:
+    // .Find our 'current_user;'
+    // . List our available users
+    // . Create a new user
+    // . Grant user privileges
+    // . Delete a user from our users table
+
+    // SELECT current user - to find the current user
+    // SELECT user, host FROM mysql.user; - To list a table of users
 }
