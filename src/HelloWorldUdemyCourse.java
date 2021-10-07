@@ -9,5 +9,9 @@ public class HelloWorldUdemyCourse {
         System.out.println("Hello " + name);
 
         //answer is simply change the word "World" to your first name
+
+        String lastName = "Figueroa";
+
+        System.out.println("Hello " + name + " " + lastName);
     }
 }
