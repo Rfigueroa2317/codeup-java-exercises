@@ -13,5 +13,9 @@ public class HelloWorldUdemyCourse {
         String lastName = "Figueroa";
 
         System.out.println("Hello " + name + " " + lastName);
+
+        String todaysExcuse = "Slacking and dragging";
+
+        System.out.println("Today's excuse for not studying as hard as I should is because of " + todaysExcuse);
     }
 }
