@@ -14,11 +14,13 @@ public class ConsoleIOReview {
         System.out.println("The output of pi is approximately 3.14");
         System.out.format(userInput);
 
+        System.out.println("This is today's push");
 
-
-
-
-
+        if (userInput == " "){
+            System.out.println("Hello there!");
+        }else{
+            return;
+        }
 
 
 
