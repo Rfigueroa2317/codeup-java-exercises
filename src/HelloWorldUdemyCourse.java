@@ -18,4 +18,5 @@ public class HelloWorldUdemyCourse {
 
         System.out.println("Today's excuse for not studying as hard as I should is because of " + todaysExcuse);
     }
+
 }

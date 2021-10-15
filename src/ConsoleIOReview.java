@@ -25,6 +25,8 @@ public class ConsoleIOReview {
         for(int i =1; i <= 10; i++) {
             if(i % 2 ==1){
                 continue;
+            }else{
+                System.out.println("Opps!");
             }
             System.out.println(i);
         }
